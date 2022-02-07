@@ -10,6 +10,10 @@ main {
   margin: 15px auto 0;
 }
 
+fieldset {
+  margin: 15px;
+}
+
 #studentForm input[name="name"] {
   grid-area: name;
 }
@@ -20,6 +24,10 @@ main {
 
 #studentForm input[name="roll"] {
   grid-area: roll;
+}
+
+#studentForm input[name="subject-list"] {
+  grid-area: subject-list;
 }
 
 #studentForm button {
