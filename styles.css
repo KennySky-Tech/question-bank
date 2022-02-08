@@ -6,7 +6,7 @@
 }
 
 main {
-  width: 80%;
+  max-width: 80%;
   margin: 15px auto 0;
 }
 
@@ -34,6 +34,12 @@ fieldset {
   grid-area: button;
 }
 
+form {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
 #studentForm {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,10 +51,10 @@ fieldset {
 }
 
 #studentForm * {
-  margin: 7px;
+  margin: 4px;
   padding: 7px;
   font-size: 1.1rem;
-  border-radius: 10px;
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
@@ -58,20 +64,26 @@ fieldset {
   color: white;
   border: 5px solid transparent;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin-left: 20%;
 }
 
 #studentForm input {
-  border: 3px solid #6495ed;
+  /* border: 3px solid #6495ed; */
   outline: none;
+  max-width: 80%;
 }
 
-#studentForm input:focus {
+/* #studentForm input:focus {
   border: 3px solid #367bfa;
 }
 
 #studentForm button:active {
   border-color: #367bfa;
-}
+} */
 
 .students {
   display: flex;
@@ -85,10 +97,14 @@ fieldset {
 }
 
 .students div {
-  width: 100%;
+  max-width: 100%;
   padding: 10px;
   text-align: center;
 }
+
+/* .question-box {
+  max-width: 80%;
+} */
 
 .students div * {
   margin: 5px;

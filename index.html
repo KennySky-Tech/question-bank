@@ -13,9 +13,9 @@
         <legend>Question Box</legend>
         <main>
           <div>
-            <div>
+            <!-- <div>
               <label>Subject</label>
-            </div>
+            </div> -->
             <input list="subject-list" type="text" name="subject-list" placeholder="Subject" required >
             <datalist id="subject-list">
               <option value="English Language">
@@ -30,10 +30,38 @@
               <option value="Yoruba Language">
             </datalist>
           </div>
-            <input type="text" placeholder="Student name" name="name" required />
-            <input type="number" placeholder="Student age" name="age" required />
-            <input type="number" placeholder="Student roll" name="roll" required />
-            <button>Add student</button>
+          <div>
+            <!-- <div>
+              <label>Year</label>
+            </div> -->
+            <input list="year-list" type="text" name="year-list" placeholder="Year" required >
+            <datalist id="year-list">
+              <option value="2010">
+              <option value="2011">
+              <option value="2012">
+              <option value="2013">
+              <option value="2014">
+              <option value="2015">
+              <option value="2016">
+              <option value="2017">
+              <option value="2018">
+              <option value="2019">
+              <option value="2020">
+              <option value="2021">
+              </datalist>
+          </div>
+          <div>
+            <textarea name="question" id="question" max-cols="60" rows="5"></textarea> <br>
+            <label for="A">A</label>
+            <input type="text" placeholder="Option A" name="option-a" required /> <br>
+            <label for="B">B</label>
+            <input type="text" placeholder="Option B" name="option-b" required /> <br>
+            <label for="C">C</label>
+            <input type="text" placeholder="Option C" name="option-c" required /> <br>
+            <label for="D">D</label>
+            <input type="text" placeholder="Option D" name="option-d" required /> <br>
+            <button>Add Question</button>
+          </div>
       </fieldset>
     </form>
         <div class="students"></div>
