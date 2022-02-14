@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,10 +13,7 @@
         <legend>Question Box</legend>
         <main>
           <div>
-            <!-- <div>
-              <label>Subject</label>
-            </div> -->
-            <input list="subject-list" type="text" name="subject-list" placeholder="Subject" required >
+                        <input list="subject-list" type="text" name="subject-list" placeholder="Subject" required >
             <datalist id="subject-list">
               <option value="English Language">
               <option value="Mathematics">
@@ -31,9 +28,6 @@
             </datalist>
           </div>
           <div>
-            <!-- <div>
-              <label>Year</label>
-            </div> -->
             <input list="year-list" type="text" name="year-list" placeholder="Year" required >
             <datalist id="year-list">
               <option value="2010">
@@ -68,4 +62,104 @@
       </main>
     <script src="./app.js"></script>
   </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+      </head>
+      <body>
+        <div class="quiz-container" id="quiz">
+          <form class="quiz-header">
+          <input list="subject-list" type="text" name="subject-list" placeholder="Subject" required >
+            <datalist id="subject-list">
+              <option value="English Language">
+              <option value="Mathematics">
+              <option value="Physics">
+              <option value="Chemistry">
+              <option value="Biology">
+              <option value="Commerse">
+              <option value="Accounting">
+              <option value="Literature-in-English">
+              <option value="Agricultural Science">
+              <option value="Yoruba Language">
+            </datalist>
+            <br> <br>
+
+            <input list="year-list" type="text" name="year-list" placeholder="Year" required >
+            <datalist id="year-list">
+              <option value="2010">
+              <option value="2011">
+              <option value="2012">
+              <option value="2013">
+              <option value="2014">
+              <option value="2015">
+              <option value="2016">
+              <option value="2017">
+              <option value="2018">
+              <option value="2019">
+              <option value="2020">
+              <option value="2021">
+              </datalist>
+                <h2 id="question">
+                  <textarea name="question" placeholder="Question text" id="question-box" cols="20" rows="10"></textarea>
+                  </h2>
+                
+                <ul>
+                    <li>
+                      <label id="a_text" for="a">A</label>
+                        <input
+                            type="text"
+                            id="a"
+                            name="answer"
+                            class="answer"
+                        />
+                    </li>
+                    <li>
+                      <label id="b_text" for="b">B</label>
+                        <input
+                            type="text"
+                            id="b"
+                            name="answer"
+                            class="answer"
+                        />
+                    </li>
+                    <li>
+                      <label id="c_text" for="c">C</label>
+                        <input
+                            type="text"
+                            id="c"
+                            name="answer"
+                            class="answer"
+                        />
+                    </li>
+                    <li>
+                      <label id="d_text" for="d">D</label>
+                        <input
+                            type="text"
+                            id="d"
+                            name="answer"
+                            class="answer"
+                        />
+                    </li>
+                    <li>
+                      <label id="d_text" for="d">Correct Option</label>
+                        <input
+                            type="text"
+                            id="correct-option"
+                            name="correct-answer"
+                            class="correct-answer"
+                        />
+                    </li>
+                </ul>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </body>
 </html>
